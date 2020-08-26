@@ -1,0 +1,151 @@
+$color1:#1e7e34;
+$color2:rgb(249, 255, 250);
+header{
+        nav{
+        border-bottom:4px solid $color1;
+        box-shadow: 1px 5px 5px -1px rgb(32, 28, 28);
+        }
+        .collapse{
+            a{
+                color: $color2;
+            }
+            a:hover{
+                color: $color1 !important;
+            }
+        }    
+    .topbar{
+        background: black;
+        .icons{
+            a:hover{
+                text-decoration: none;
+            }
+            i{
+                font-size: 20px;
+                color: $color1;
+            }
+        }
+        .info{
+            a:hover{
+                text-decoration: none;
+            }
+        }   
+    }
+}
+#Service{
+    h1{
+        border-bottom: 2px solid black;
+        border-color: $color1;
+    }
+    
+    .appointment-area{
+        box-shadow: 0px 1px 10px 0px rgb(158, 158, 158);
+        border-radius: 5px;
+        h3{
+            margin-bottom:30px;
+            padding-bottom: 20px;
+        }
+        form{
+            input{
+                border: 1px solid $color1;
+            }
+            select{
+                border: 1px solid $color1;
+            }
+            textarea{
+                border: 1px solid $color1;
+            }
+        }
+        
+    }
+}
+section{
+    .card-block{
+        i{
+            font-size: 30px;
+        }
+    }
+}
+#Facilities{
+    .card{
+        border: 3px solid green;
+        background-color: rgb(43, 43, 44);
+        padding: 5px;
+        text-align: center;
+        i{
+            color: white;
+        }
+    }
+}
+#Consultants{
+    .card{
+        position: relative;
+    }
+    .overlay{
+        position: absolute;
+        background-color: $color1;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        transition: 2s ease;
+    }
+    .text-area{
+        position: absolute;
+        opacity: 0;
+        transition: 2s ease;
+        font-size: 15pt;
+        text-decoration: none;
+        color: #fff;
+        margin: 20px 20px;
+        .icons {
+            transform: translate(50px, 10px);
+            i{
+                border: 1px solid #fff;
+                padding: 3px;
+            }
+        }
+        .text{
+            transform: translate(50px, 50px);
+            h6{
+                margin: 0;
+            }
+            P{
+                font-size: 15px;
+            }
+        }
+    }
+    .card:hover .overlay{
+        opacity: .5;
+    }
+    .card:hover .text-area{
+        opacity: 1;
+    }
+}
+#signup{
+    form{
+        input{
+            line-height: 38px;
+            border: none;
+            background: $color2;
+            font-size: 20px;
+            font-weight: 300px;
+            border-radius: 20px;
+            color: $color1;
+            padding-left: 20px;
+            width:100%;
+        }
+        button{
+            font-size: 18px;
+            i{
+                transition: .4s ease;
+            }
+        }
+        button:hover i{
+            transform: translateX(15px);
+            transition: .4s ease-in-out;
+        }
+    }
+    h6{
+        font-size: 14px;
+        font-style: italic;
+    }
+}
